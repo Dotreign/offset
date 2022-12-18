@@ -30,7 +30,7 @@ public class RegisterController {
 //    }
 
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.PUT})
-    @PostMapping("localhost:8080")
+    @PostMapping
     public String addUser(@RequestParam String email, @RequestParam String username, @RequestParam String country, @RequestParam String phoneNumber, @RequestParam String password, Map<String, Object> model) {
         User user = new User(username, email, country, phoneNumber, password);
         userRepository.save(user);
