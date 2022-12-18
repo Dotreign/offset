@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{css/styles.css}">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in</title>
+</head>
+<body>
+<div class="container">
+    <div class="forms">
+        <div class="wrapper sign-in__wrapper">
+<!--            <form class="sign-in">-->
+<!--                <p class="sign-in-name">S<span style="color: #e77878">i</span>gn in</p>-->
+<!--                <div class="email">-->
+<!--                    <input type="email" id="email_area" class="email_area" name="userEmail" placeholder="Enter your email">-->
+<!--                </div>-->
+<!--                <div class="pword">-->
+<!--                    <input type="password" id="pword_area" name="pword" placeholder="Enter your password">-->
+<!--                </div>-->
+<!--                <input class="sign-in__submit submit" type="submit" value="Sign in">-->
+<!--                <div class="or">-->
+<!--                    <span class="line-left"></span>-->
+<!--                    <div class="or__text">or you can try</div>-->
+<!--                    <span class="line-right"></span>-->
+<!--                </div>-->
+<!--                <div class="social">-->
+<!--                    <div class="gmail">-->
+<!--                        <img th:src="@{media/google-plus.png}" alt="" class="gmail__pic top">-->
+<!--                        <img th:src="@{media/google-plus%20(1).png}" alt="" class="gmail__pic bot">-->
+<!--                    </div>-->
+<!--                    <div class="vk">-->
+<!--                        <img th:src="@{media/vk.png}" alt="" class="vk__pic top">-->
+<!--                        <img th:src="@{media/vk%20(1).png}" alt="" class="vk__pic bot">-->
+<!--                    </div>-->
+<!--                    <div class="fb">-->
+<!--                        <img th:src="@{media/facebook.png}" alt="" class="fb__pic top">-->
+<!--                        <img th:src="@{media/facebook%20(1).png}" alt="" class="fb__pic bot">-->
+<!--                    </div>-->
+<!--                    <div class="ig">-->
+<!--                        <img th:src="@{media/instagram.png}" alt="" class="ig__pic top">-->
+<!--                        <img th:src="@{media/instagram%20(1).png}" alt="" class="ig__pic bot">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </form>-->
+        </div>
+        <div class="wrapper sign-up__wrapper">
+            <form class="sign-up" method="post" action="">
+                <p class="sign-up-name">S<span style="color: #e77878">i</span>gn up</p>
+                <div class="email email__signup">
+                    <input type="text" class="email_area_up email_area" id="email_area_up" name="userEmail" placeholder="Enter your email">
+                </div>
+                <div class="country email__signup">
+                    <input type="text" class="email_area_up email_area" id="username_area_up" name="userName" required placeholder="Enter your username">
+                </div>
+                <div class="country">
+                    <select id="country" name="phone"></select>
+                </div>
+                <div class="phone">
+                    <input type="text" id="phone" name="phone" placeholder="+7" required>
+                </div>
+                <div class="pword">
+                    <input type="password" id="pword_area_up" name="pword" placeholder="Enter your password">
+                </div>
+                <input class="sign-in__submit submit" type="submit" value="Sign up">
+                <div class="or">
+                    <span class="line-left"></span>
+                    <div class="or__text">or you can try</div>
+                    <span class="line-right"></span>
+                </div>
+                <div class="social">
+                    <div class="gmail">
+                        <img th:src="@{media/google-plus.png}" alt="" class="gmail__pic top">
+                        <img th:src="@{media/google-plus%20(1).png}" alt="" class="gmail__pic bot">
+                    </div>
+                    <div class="vk">
+                        <img th:src="@{media/vk.png}" alt="" class="vk__pic top">
+                        <img th:src="@{media/vk%20(1).png}" alt="" class="vk__pic bot">
+                    </div>
+                    <div class="fb">
+                        <img th:src="@{media/facebook.png}" alt="" class="fb__pic top">
+                        <img th:src="@{media/facebook%20(1).png}" alt="" class="fb__pic bot">
+                    </div>
+                    <div class="ig">
+                        <img th:src="@{media/instagram.png}" alt="" class="ig__pic top">
+                        <img th:src="@{media/instagram%20(1).png}" alt="" class="ig__pic bot">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="abfwbgedhbgkdjg"></div>
+    <div class="informations">
+        <div class="overlay">
+            <div class="overlay-main">
+                <div class="info">
+                    <p class="info__text">Hello, friend!</p>
+                    <div class="info__add-text">Register and join our community!</div>
+                    <div class="or">
+                        <span class="line-left"></span>
+                        <div class="or__text">if you are already with us</div>
+                        <span class="line-right"></span>
+                    </div>
+                    <button class="info__to-sign-up">Sign in</button>
+                </div>
+                <div class="info">
+                    <p class="info__text">Welcome back!</p>
+                    <div class="info__add-text">Login faster, we can't wait more!</div>
+                    <div class="or">
+                        <span class="line-left"></span>
+                        <div class="or__text">if you aren't with us yet</div>
+                        <span class="line-right"></span>
+                    </div>
+                    <button class="info__to-sign-in">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script th:src="@{js/jquery-3.6.2.min.js}"></script>
+<script th:src="@{js/jquery.validate.min.js}"></script>
+<script th:src="@{https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js}" type="text/javascript"></script>
+<script th:src="@{js/script.js}"></script>
+</html>

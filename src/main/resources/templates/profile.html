@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="css/profile.css">
+    <script th:src="js/jquery-3.6.2.min.js"></script>
+    <script th:src="js/profilejs.js"></script>
+    <title>{{username}} profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="img">
+                <img th:src="media/user.png" alt="" class="profile_pic">
+            </div>
+            <div class="username">{{username}}<span></span></div>
+            <ul class="info">
+                <li class="country-span">Country: <div class="country">{{country}}</div></li>
+                <li class="email-span">E-mail: <div class="email">{{email}}</div></li>
+                <li class="phone-span">Phone number: <div class="phone">{{phoneNumber}}</div></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

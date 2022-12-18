@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background: #f6f5f7;
+}
+
+.container {
+    background: white;
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    border-radius: 10px;
+    top: 20vh;
+    left: 25vw;
+}
+
+input:focus, select:focus {
+    outline: 1px solid #e77878;
+}
+
+.forms {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.wrapper {
+    width: 50%;
+    background: linear-gradient(90deg, palevioletred, indianred);
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    height: 100%;
+    padding: 5px;
+}
+
+.sign-in__wrapper {
+    left: 0;
+    background: #fff;
+}
+
+.sign-up__wrapper {
+    left: 50%;
+    border-radius: 0 10px 10px 0;
+    background: #fff;
+}
+
+.sign-in {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 5%;
+}
+
+.sign-up {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 5%;
+}
+
+.sign-in-name {
+    font-size: 56px;
+    letter-spacing: -3px;
+    font-weight: bold;
+}
+
+.sign-up-name {
+    font-size: 56px;
+    letter-spacing: -3px;
+    font-weight: bold;
+}
+
+.email {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 15% 1% 1%;
+    position: relative;
+}
+
+.email__signup {
+    margin: 8% 1% 1%;
+}
+
+form > div > label {
+    position: absolute;
+    top: -20px;
+    left: 52px;
+    font-size: 11px;
+    color: #e73a3a;
+    font-weight: bold;
+}
+
+input.errorMsg {
+    outline: 2px solid #e73a3a;
+}
+
+.country {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 1% 1%;
+    position: relative;
+}
+
+.phone {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 1% 1%;
+    position: relative;
+}
+
+.country > select {
+    width: 75%;
+    border: none;
+    background-color: #e7e7e7;
+    padding: 5px 15px;
+    outline: #e77878;
+}
+
+.pword {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 1% 1%;
+    position: relative;
+}
+
+input {
+    width: 75%;
+    border: none;
+    background-color: #e7e7e7;
+    padding: 5px 15px;
+}
+
+label {
+    position: absolute;
+    left: 88.5%;
+    height: 24px;
+    top: calc((100% - 24px)/2);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.submit {
+    width: 30%;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 15%;
+    transition: 0.1s;
+    border: none;
+    background-color: #e77878;
+    color: white;
+    cursor: pointer;
+}
+
+.sign-up > .submit {
+    margin-top: 6%;
+}
+
+.submit:hover {
+    background-color: #e73a3a;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.or {
+    margin-top: 12%;
+    width: 100%;
+    display: flex;
+}
+
+.sign-up > .or {
+    margin-top: 5%;
+}
+
+.line-left {
+    width: 33%;
+    border-bottom: 1px solid #d9d9d9;
+    height: 50%;
+    margin-right: 2px;
+}
+.line-right {
+    width: 33%;
+    border-bottom: 1px solid #d9d9d9;
+    height: 50%;
+    margin-left: 2px;
+}
+
+.or__text {
+    width: 33%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 100%;
+    color: #bbbbbb;
+}
+
+.social {
+    margin-top: 8%;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.gmail {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gmail:hover .top {
+    opacity: 0;
+}
+
+.gmail:hover .bot {
+    opacity: 1;
+}
+
+.bot {
+    opacity: 0;
+}
+
+.gmail__pic {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.vk {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    cursor: pointer;
+}
+
+.vk:hover .top {
+    opacity: 0;
+}
+
+.vk:hover .bot {
+    opacity: 1;
+}
+
+.bot {
+    opacity: 0;
+}
+
+.vk__pic {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.fb {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    cursor: pointer;
+}
+
+.fb:hover .top {
+    opacity: 0;
+}
+
+.fb:hover .bot {
+    opacity: 1;
+}
+
+.bot {
+    opacity: 0;
+}
+
+.fb__pic {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.ig {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ig:hover .top {
+    opacity: 0;
+}
+
+.ig:hover .bot {
+    opacity: 1;
+}
+
+.bot {
+    opacity: 0;
+}
+
+.ig__pic {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.overlay {
+    z-index: 2;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    transition: 0.5s;
+}
+
+.overlay-main {
+    background: #e77878;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__text {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.info > .or {
+    margin-top: 20%;
+}
+
+.info > .or > .or__text {
+    width: 50%;
+    color: white;
+}
+
+.info > .or > .line-left {
+    border-bottom: 1px solid #ffffff;;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.info > .or > .line-right {
+    border-bottom: 1px solid #ffffff;
+    width: 20%;
+    margin-right: 5%;
+}
+
+.info__add-text {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.info__to-sign-up {
+    margin-left: calc((100% - 108px)/2);
+    margin-top: 15%;
+    width: 108px;
+    height: 48px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 48px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.info__to-sign-in {
+    margin-left: calc((100% - 108px)/2);
+    margin-top: 15%;
+    width: 108px;
+    height: 48px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 48px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.toggle-overlay {
+    transform: translateX(100%);
+}
+
+.toggle-overlay-inside {
+    transform: translateX(-50%);
+}
+
